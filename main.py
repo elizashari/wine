@@ -30,7 +30,7 @@ if __name__ == '__main__':
 
     year_foundation = 1920
     nowadays = datetime.datetime.now().year
-    age = nowadays-year_foundation
+    age = nowadays - year_foundation
     suffix = decline_years(nowadays)
     excel_wines_df = pandas.read_excel(os.environ['DATA_FILE'])
     excel_wines_df = excel_wines_df.fillna(0)
