@@ -28,9 +28,9 @@ if __name__ == '__main__':
 
     template = env.get_template('template.html')
 
-    year_foundation = 1920
-    nowadays = datetime.datetime.now().year
-    age = nowadays - year_foundation
+    foundation_year = 1920
+    now_year = datetime.datetime.now().year
+    age = now_year - foundation_year
     suffix = decline_years(nowadays)
     excel_wines_df = pandas.read_excel(os.environ['DATA_FILE'])
     excel_wines_df = excel_wines_df.fillna(0)
